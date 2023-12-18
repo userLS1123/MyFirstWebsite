@@ -1,0 +1,22 @@
+/* Name: Chew Shu Wen
+Admin number: p227423
+Class: DISM1A/05  */
+
+
+/* minimum height of the my feedback content for interests */
+.feedbackContent {
+    min-height: 50rem;
+    background-color: #41729F;
+}
+
+.feedbackContent .btn {
+    background-color: white;
+    color:  #41729F;
+}
+
+.modal1 {
+    margin-left: 25%;
+}
+.modal1 .btn{
+    background-color: white;
+}

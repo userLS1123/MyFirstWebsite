@@ -1,0 +1,171 @@
+/* Name: Chew Shu Wen
+Admin number: p227423
+Class: DISM1A/05  */
+
+/* minimum height of the my courses content */
+.coursesContent {
+    min-height: 50rem;
+}
+
+.coursesContent h1 {
+    font-size: 3.0rem;
+    margin-bottom: 5%;
+    color: #41729F;
+}
+
+.coursesContent h2 {
+    color: black;
+}
+
+.coursesContent .btn {
+    background-color: #FDBFAF;
+    color: black;
+}
+
+.coursesContent .card {
+    background: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    border: 1;
+    border-radius: 1rem;
+}
+
+/* card image will colourize when hovered */
+.img-hover-zoom--colorize img {
+    width: 200px;
+}
+
+.img-hover-zoom--colorize img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    padding: 1px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.card h5 {
+    overflow: hidden;
+    height: 80px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* makes more info button centralised  */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* minimum height of the my first experiences content */
+.firstexperiencesContent {
+    min-height: 65rem;
+}
+
+.firstexperiencesContent .btn {
+    background-color: #E4B7A0;
+    color: black;
+}
+
+.firstexperiencesContent h5 {
+    font-size: 1.8rem;
+}
+
+.firstexperiencesContent h1 {
+    font-size: 3.0rem;
+    margin-bottom: 5%;
+    color: #41729F;
+}
+
+.firstexperiencesContent .card {
+    border-radius: 20px;
+}
+
+.firstexperiencesContent .card img {
+    border-radius: 20px;
+}
+
+/* minimum height of the my Sp facilities content */
+.favfacContent {
+    min-height: 100rem;
+    padding: 60px;
+}
+
+.favfacContent h1 {
+    font-size: 3.0rem;
+    margin-bottom: 10%;
+    color: #41729F;
+}
+
+.favfacContent .card {
+    border-radius: 20px;
+}
+
+.favfacContent .card img {
+    border-radius: 20px;
+}
+
+.tableContent h1 {
+    font-size: 3.0rem;
+    margin-bottom: 10%;
+    color: #41729F;
+}
+
+/* creates a legend for the timetable  */
+#legendfortable {
+    margin-bottom: 5%;
+}
+
+.Legend-item {
+    margin-left: 14%;
+}
+
+.Legend-colorBox {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+}
+
+.table> :not(:first-child) {
+    border-top: 0px;
+}
+
+.FOP {
+    background-color: #B5E5CF !important;
+}
+
+.FED {
+    background-color: #E98973 !important;
+}
+
+.FOC {
+    width: 200px !important;
+    background-color: #88B2CC !important;
+}
+
+table thead th {
+    background-color: #E4B7A0 !important;
+    border-left: black;
+}
+
+table tbody td {
+    border-bottom: black;
+    background-color: #F6EEE0 !important;
+}
+
+th {
+    height: 70px;
+    text-align: center;
+    background-color: #E4B7A0 !important;
+}
+
+td {
+    height: 70px;
+    text-align: center;
+}

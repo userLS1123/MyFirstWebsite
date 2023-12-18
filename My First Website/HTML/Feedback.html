@@ -1,0 +1,224 @@
+<!--
+    Name: Chew Shu Wen
+    Admin number: p227423
+    Class: DISM1A/05 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>My First Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+    <script src="../JS/Feedback.js" defer></script>
+
+    <script src="../JS/Default.js" defer></script>
+
+    <link href="../CSS/Default.css" rel="stylesheet">
+
+    <link href="../CSS/Feedback.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <div class="container-fluid">
+              <a class="navbar-brand d-lg-none" href="#">Menu</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                      <a class="navbar-brand d-none d-lg-none" href="">Menu</a>
+                      <li class="nav-item">
+                          <a class="nav-link active"  href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../HTML/ExperiencesinSP.html">Experiences in SP</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../HTML/Interests.html">Interests</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../HTML/CareerOptions.html">Career Prospects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../HTML/Feedback.html">Feedback</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <div>
+      <h1 class="landingPage">Feedback</h1>
+    </div>
+
+    <section class="reveal">
+      <div class="feedbackContent">
+        <div class="feedbackContent d-flex align-items-center justify-content-center" id="feedbackFormArea">
+          <div class="container text-light rounded">
+
+            <form action="#" method="post" class="needs-validation" novalidate>
+              <div class="mainRow row row-cols-md-2 row-cols-1 p-3 justify-content-center">
+                <div class="col-12">
+
+                  <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="John Doe" maxlength="345"
+                      autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <div class="row">
+                      <div class="col-12">
+                        <input class="form-control" type="email" id="email" autocomplete="off" required maxlength="345"
+                          placeholder="example@gmail.com"
+                          pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+                      </div>
+
+                      <div class="col-12">
+                        <div class="listContainer d-flex bg-info">
+                          <ul class="list-group list-unstyled invisible text-dark" id="results"></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+
+                    <p>Rate how much you enjoyed my website from 1 to 5</p>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rating1" name="rate" class="custom-control-input" required>
+                      <label class="custom-control-label" for="rating1">1</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rating2" name="rate" class="custom-control-input">
+                      <label class="custom-control-label" for="rating2">2</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rating3" name="rate" class="custom-control-input">
+                      <label class="custom-control-label" for="rating3">3</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rating4" name="rate" class="custom-control-input">
+                      <label class="custom-control-label" for="rating4">4</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rating5" name="rate" class="custom-control-input">
+                      <label class="custom-control-label" for="rating5">5</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="liked">
+                      Which part do you like the most?
+                    </label>
+
+                    <select id="liked" class="custom-select">
+                      <option value="About me">About me</option>
+                      <option value="Experiences in SP">Experiences in SP</option>
+                      <option value="Timetable">Timetable</option>
+                      <option value="Career Prospects">Career Prospects</option>
+                      <option value="Feedback Form">Feedback Form</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <p>Which parts do you like the least/would like to see me change?</p>
+
+                    <div class="custom-control custom-checkbox custom-control-inline">
+
+                      <input id="home" type="checkbox" class="custom-control-input" value="home" />
+                      <label for="home" class="custom-control-label">About me</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input id="past" type="checkbox" class="custom-control-input" value="past" />
+                      <label for="past" class="custom-control-label">Experiences in SP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input id="present" type="checkbox" class="custom-control-input" value="present" />
+                      <label for="present" class="custom-control-label">Timetable</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input id="future" type="checkbox" class="custom-control-input" value="future" />
+                      <label for="future" class="custom-control-label">Career Prospects</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input id="contact" type="checkbox" class="custom-control-input" value="contact" />
+                      <label for="contact" class="custom-control-label">Feedback Form</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label" for="recommend">
+                      How aesthetic is my website?<br />
+                    </label>
+                    <input id="recommend" class="form-range" type="range" min="1" max="10">
+                  </div>
+
+                  <div class="form-group">
+                    <textarea class="form-control" name="type_feedback" maxlength="1000" rows="15" cols="70"
+                      placeholder="Other feedback (optional)"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-primary" id="submitButton" type="button">Submit form</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      Press me to go back up!
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+
+
+    <footer class="text-center text-white">
+      <div class="container p-4 pb-0">
+          <section class="mb-4">
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
+                  href="" role="button"><i class="bi bi-facebook"></i>
+              </a>
+
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"
+                  href="" role="button"><i
+                      class="bi bi-instagram"></i>
+              </a>
+          </section>
+      </div>
+
+      <div class="text-center p-3" style="background-color: #41729F;">
+          © 2020 Chew Shu Wen:
+      </div>
+  </footer>
+  </body>
+</html>
